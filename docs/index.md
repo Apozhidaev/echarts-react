@@ -8,7 +8,7 @@ hero:
     - text: 在线实例
       link: /examples/dynamic
     - text: 开源地址
-      link: https://github.com/hustcc/echarts-for-react
+      link: https://github.com/Apozhidaev/echarts-react
 footer: Open-source MIT Licensed | Copyright © 2021-present
 ---
 
@@ -91,4 +91,4 @@ export default Page;
 
 ## 反馈
 
-请访问 [GitHub](https://github.com/hustcc/echarts-for-react)。
+请访问 [GitHub](https://github.com/Apozhidaev/echarts-react)。

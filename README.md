@@ -1,12 +1,12 @@
-# echarts-for-react
+# @echarts-wrapper/react
 
 The simplest, and the best React wrapper for [Apache ECharts](https://github.com/apache/incubator-echarts). 
 
-[![npm](https://img.shields.io/npm/v/echarts-for-react.svg)](https://www.npmjs.com/package/echarts-for-react)
-[![Build Status](https://github.com/hustcc/echarts-for-react/workflows/build/badge.svg?branch=master)](https://github.com/hustcc/echarts-for-react/actions?query=workflow%3Abuild)
-[![Coverage](https://img.shields.io/coveralls/hustcc/echarts-for-react/master.svg)](https://coveralls.io/github/hustcc/echarts-for-react)
-[![NPM downloads](https://img.shields.io/npm/dm/echarts-for-react.svg)](https://www.npmjs.com/package/echarts-for-react)
-[![License](https://img.shields.io/npm/l/echarts-for-react.svg)](https://www.npmjs.com/package/echarts-for-react)
+[![npm](https://img.shields.io/npm/v/@echarts-wrapper/react.svg)](https://www.npmjs.com/package/@echarts-wrapper/react)
+[![Build Status](https://github.com/Apozhidaev/echarts-react/workflows/build/badge.svg?branch=master)](https://github.com/Apozhidaev/echarts-react/actions?query=workflow%3Abuild)
+[![Coverage](https://img.shields.io/coveralls/Apozhidaev/echarts-react/master.svg)](https://coveralls.io/github/Apozhidaev/echarts-react)
+[![NPM downloads](https://img.shields.io/npm/dm/@echarts-wrapper/react.svg)](https://www.npmjs.com/package/@echarts-wrapper/react)
+[![License](https://img.shields.io/npm/l/@echarts-wrapper/react.svg)](https://www.npmjs.com/package/@echarts-wrapper/react)
 ![ECharts Ver](https://img.shields.io/badge/echarts-%5E3.0.0%20%7C%7C%20%5E4.0.0%20%7C%7C%20%5E5.0.0-blue.svg)
 ![React Ver](https://img.shields.io/badge/React-%20%5E15.0.0%20%7C%7C%20%20%5E16.0.0%20%7C%7C%20%20%5E17.0.0-blue.svg)
 
@@ -14,16 +14,16 @@ The simplest, and the best React wrapper for [Apache ECharts](https://github.com
 ## Install
 
 ```bach
-$ npm install --save echarts-for-react
+$ npm install --save @echarts-wrapper/react
 
-# `echarts` is the peerDependence of `echarts-for-react`, you can install echarts with your own version.
+# `echarts` is the peerDependence of `@echarts-wrapper/react`, you can install echarts with your own version.
 $ npm install --save echarts
 ```
 
 Then use it.
 
 ```ts
-import ReactECharts from 'echarts-for-react';
+import ReactECharts from '@echarts-wrapper/react';
 
 // render echarts option.
 <ReactECharts option={this.getOption()} />
@@ -32,23 +32,23 @@ import ReactECharts from 'echarts-for-react';
 You can run website.
 
 ```bash
-$ git clone git@github.com:hustcc/echarts-for-react.git
+$ git clone git@github.com:Apozhidaev/echarts-react.git
 
 $ npm install
 
 $ npm start
 ```
 
-Then open [http://127.0.0.1:8081/](http://127.0.0.1:8081/) in your browser. or see [https://git.hust.cc/echarts-for-react/](https://git.hust.cc/echarts-for-react/) which is deploy on gh-pages.
+Then open [http://127.0.0.1:8081/](http://127.0.0.1:8081/) in your browser. or see [https://git.hust.cc/@echarts-wrapper/react/](https://git.hust.cc/@echarts-wrapper/react/) which is deploy on gh-pages.
 
 
 ## Usage
 
-Code of a simple demo code showed below. For more example can see: [https://git.hust.cc/echarts-for-react/](https://git.hust.cc/echarts-for-react/)
+Code of a simple demo code showed below. For more example can see: [https://git.hust.cc/@echarts-wrapper/react/](https://git.hust.cc/@echarts-wrapper/react/)
 
 ```ts
 import React from 'react';
-import ReactECharts from 'echarts-for-react';  // or var ReactECharts = require('echarts-for-react');
+import ReactECharts from '@echarts-wrapper/react';  // or var ReactECharts = require('@echarts-wrapper/react');
 
 <ReactECharts
   option={this.getOption()}
@@ -68,7 +68,7 @@ Import ECharts.js modules manually to reduce bundle size
 ```ts
 import React from 'react';
 // import the core library.
-import ReactEChartsCore from 'echarts-for-react/lib/core';
+import ReactEChartsCore from '@echarts-wrapper/react/lib/core';
 // Import the echarts core module, which provides the necessary interfaces for using echarts.
 import * as echarts from 'echarts/core';
 // Import charts, all with Chart suffix
@@ -158,7 +158,7 @@ echarts.use(
 ```ts
 import React from 'react';
 // import the core library.
-import ReactEChartsCore from 'echarts-for-react/lib/core';
+import ReactEChartsCore from '@echarts-wrapper/react/lib/core';
 
 // then import echarts modules those you have used manually.
 import echarts from 'echarts/lib/echarts';
@@ -374,7 +374,7 @@ npm install --save echarts-gl
 
 ```ts
 import 'echarts-gl'
-import ReactECharts from "echarts-for-react";
+import ReactECharts from "@echarts-wrapper/react";
 
 <ReactECharts
   option={GL_OPTION}

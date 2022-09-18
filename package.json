@@ -1,6 +1,6 @@
 {
-  "name": "echarts-for-react",
-  "version": "3.0.2",
+  "name": "@echarts-wrapper/react",
+  "version": "0.0.2",
   "description": " Apache Echarts components for React.",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -10,11 +10,11 @@
     "esm",
     "src"
   ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
-    "docs:dev": "NODE_ENV=development dumi dev",
-    "docs:build": "NODE_ENV=production dumi build",
-    "docs:deploy": "rimraf dist && npm run docs:build && gh-pages -d dist",
-    "start": "npm run docs:dev",
     "lint": "eslint src __tests__ && prettier src __tests__ --check",
     "fix": "eslint src __tests__ --fix && prettier src __tests__ --write",
     "clean": "rimraf lib esm dist",
@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hustcc/echarts-for-react.git"
+    "url": "https://github.com/Apozhidaev/echarts-react.git"
   },
   "keywords": [
     "react",
@@ -39,12 +39,12 @@
     "graph",
     "react-component"
   ],
-  "author": "hustcc (http://github.com/hustcc)",
+  "author": "Apozhidaev (http://github.com/Apozhidaev)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hustcc/echarts-for-react/issues"
+    "url": "https://github.com/Apozhidaev/echarts-react/issues"
   },
-  "homepage": "https://github.com/hustcc/echarts-for-react",
+  "homepage": "https://github.com/Apozhidaev/echarts-react",
   "devDependencies": {
     "@commitlint/cli": "^12.0.0",
     "@commitlint/config-angular": "^12.0.0",
